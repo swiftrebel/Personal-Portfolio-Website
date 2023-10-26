@@ -4,8 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="layout.css">
+    
 </head>
 <body>
+
+    <header>
+        <div id="logo">
+            <h1>David <span id="logo-em">Sanchez</span></h1>
+        </div>
+        <div class="banner">
+            <h2>Software Engineer</h2>
+            <p>I'm a software engineer based in Panama. <br>
+                I specialize in JavaScript and React.</p>
+        </div>
+        <nav class="menu">
+                <a id="about-me-nav" href="#">About Me</a>
+                <a id="projects-nav" href="#">Projects</a>
+                <a id="skills-nav" href="#">Skills</a>
+                <a id="contact-nav" href="#">Contact</a>
+        </nav>
+    </header>
     
+    <section class="about-me">
+        <div class="about-me-img">
+            <img src="resources/myPhoto.png" alt="David Sanchez photo">
+        </div>
+        <div class="about-me-text">
+            <h2>About <span id="me-em">Me</span></h2>
+            <div class="about-me-paragraph">
+                <p>
+                    Hello, I'm David, a passionate frontend developer with a strong 
+                    focus on creating beautiful, user-friendly web applications. 
+                    I am dedicated to turning design concepts into responsive and 
+                    interactive websites, ensuring a seamless user experience.</p>
+                <p>
+                    My journey into web development started when I discovered my 
+                    love for crafting engaging user interfaces and bringing them to 
+                    life. With a keen eye for detail and a commitment to staying 
+                    up-to-date with the latest web technologies, I strive to create 
+                    modern and visually appealing websites that leave a lasting 
+                    impression.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects">
+        <h2>Projects</h2>
+        <div class="all-projects">
+            <h3>Number Guesser</h3>
+            <h3>Flexbox Business Site</h3>
+            <h3>Mystery Organism</h3>
+            <h3>Mixed Message</h3>
+        </div>
+    </section>
+
+    <section class="skills">
+        <h2>Skills</h2>
+        <div class="all-skills">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+            <span>React</span>
+            <span>Git</span>
+            <span>Figma</span>
+        </div>
+    </section>
+    
+    <section class="contact">
+        <h2>Contact</h2>
+        <div class="all-contacts">
+            <p>If you'd like to get in touch or discuss a potential project, please 
+                feel free to contact me:</p>
+
+            <p>Email: [your@email.com]</p>
+                
+            <p>LinkedIn: LinkedIn Profile</p>
+                
+            <p>GitHub: GitHub Profile</p>    
+        </div>
+    </section>
+    
+    <script src="main.js"></script>
 </body>
 </html>
