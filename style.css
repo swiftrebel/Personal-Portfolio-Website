@@ -23,7 +23,7 @@ header {
 }
 
 #logo-em {
-    font-size: 24px;
+    font-size: 22px;
     color: crimson;
 }
 
@@ -67,15 +67,17 @@ a {
 }
 
 .about-me {
-    /*border: white solid 2px;*/
-    margin: 85px 100px 120px 100px;
+    margin: 85px 100px 15px 100px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .about-me-img {
-    margin: 50px 0;
+    margin: 50px 50px;
+    width: 395px;
+    height: 395px;
 }
 
 .about-me-text {
@@ -86,6 +88,130 @@ a {
 #me-em {
     color: crimson;
 }
+
+.skills {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0px 100px;
+}
+
+.skills-text {
+    text-align: center;
+    
+}
+
+.all-skills {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+#first-row {
+    display: flex;
+    justify-content: center;
+}
+
+#second-row {
+    display: flex;
+    justify-content: center;
+    color: crimson;
+}
+
+#third-row {
+    display: flex;
+    justify-content: center;
+}
+
+.skills-text h3 {
+    font-weight: 700;
+    width: 150px;
+}
+.skills-img img {
+    height: 500px;
+    width: 500px;
+}
+
+.projects {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 100px 200px 100px;
+}
+
+.projects-img img {
+    width: 350px;
+    height: 350px;
+    margin-left: 150px;
+}
+
+.projects-text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px;
+    height: 400px;
+    padding-right: 210px;
+    margin-right: 50px;
+}
+
+.projects-text h2 {
+    text-align: center;
+    padding-left: 250px;
+}
+
+.projects-text h3 {
+    text-align: end;
+}
+
+.all-projects {
+    cursor: pointer;
+}
+
+.all-projects img{
+    width: 16px;
+    height: 16px;
+}
+
+#button-1,
+#button-2,
+#button-3,
+#button-4 {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+#button-1 img,
+#button-2 img,
+#button-3 img,
+#button-4 img {
+    margin: 5px;
+}
+
+#button-1:hover,
+#button-2:hover,
+#button-3:hover,
+#button-4:hover {
+    color: crimson
+}
+
+#button-1 {
+    margin-left: 215px;
+}
+#button-2 {
+    margin-left: 170px;
+}
+#button-3 {
+    margin-left: 200px;
+}
+#button-4 {
+    margin-left: 226px;
+}
+
+
+
+
 
 
 
