@@ -38,6 +38,7 @@ const deployProject1 = (project, event, text) => {
       button3.style.display = "none";
       button4.style.display = "none";
       projectImage.src = "resources/guess-number.png";
+      projectImage.style.paddingTop = "100px";
     } else {
       event.style.transform = "rotate(0deg)";
       text.style.display = "";
@@ -45,6 +46,7 @@ const deployProject1 = (project, event, text) => {
       button3.style.display = "";
       button4.style.display = "";
       projectImage.src = "/resources/projects.png";
+      projectImage.style.paddingTop = "0px"
     }
      
     toggle = !toggle;
@@ -63,6 +65,7 @@ const deployProject2 = (project, event, text) => {
       button3.style.display = "none";
       button4.style.display = "none";
       projectImage.src = "/resources/flexbox.png";
+      projectImage.style.paddingTop = "120px"
     } else {
       event.style.transform = "rotate(0deg)";
       text.style.display = "none";
@@ -70,6 +73,7 @@ const deployProject2 = (project, event, text) => {
       button3.style.display = "";
       button4.style.display = "";
       projectImage.src = "/resources/projects.png";
+      projectImage.style.paddingTop = "0px";
     }
      
     toggle = !toggle;
@@ -88,6 +92,7 @@ const deployProject3 = (project, event, text) => {
       button2.style.display = "none";
       button4.style.display = "none";
       projectImage.src = "resources/mysterious-organism-white.png";
+      projectImage.style.paddingTop = "120px";
     } else {
       event.style.transform = "rotate(0deg)";
       text.style.display = "none";
@@ -95,6 +100,7 @@ const deployProject3 = (project, event, text) => {
       button2.style.display = "";
       button4.style.display = "";
       projectImage.src = "resources/projects.png";
+      projectImage.style.paddingTop = "0px";
     }
      
     toggle = !toggle;
@@ -113,6 +119,7 @@ const deployProject4 = (project, event, text) => {
       button2.style.display = "none";
       button3.style.display = "none";
       projectImage.src = "/resources/mixed-message.png";
+      projectImage.style.paddingTop = "120px";
     } else {
       event.style.transform = "rotate(0deg)";
       text.style.display = "none";
@@ -120,6 +127,7 @@ const deployProject4 = (project, event, text) => {
       button2.style.display = "";
       button3.style.display = "";
       projectImage.src = "resources/projects.png";
+      projectImage.style.paddingTop = "0px";
     }
      
     toggle = !toggle;
@@ -139,10 +147,10 @@ const button2img = document.querySelector("#button-2 img");
 const button3img = document.querySelector("#button-3 img");
 const button4img = document.querySelector("#button-4 img");
 
-const button1text = document.getElementById("button-1-text")
-const button2text = document.getElementById("button-2-text")
-const button3text = document.getElementById("button-3-text")
-const button4text = document.getElementById("button-4-text")
+const button1text = document.getElementById("button-1-text");
+const button2text = document.getElementById("button-2-text");
+const button3text = document.getElementById("button-3-text");
+const button4text = document.getElementById("button-4-text");
 
 const projectImage = document.getElementById("main-image-proj");
 

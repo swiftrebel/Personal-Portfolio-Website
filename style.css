@@ -96,6 +96,7 @@ a:hover {
 }
 
 .skills {
+
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -151,7 +152,6 @@ a:hover {
     width: 350px;
     height: 350px;
     object-fit: scale-down;
-    padding-top: 80px;
 }
 
 .projects-text {
@@ -253,7 +253,257 @@ a:hover {
 }
 
 
+@media only screen and (max-width: 1200px) {
+    .banner p {
+        display: none;
+    }
+}
 
+@media only screen and (max-width: 1065px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0;
+    }
+
+    #logo {
+        text-align: center;
+    }
+
+    nav {
+        display: none;
+
+    }
+
+    .banner {
+        margin-top: 0;
+    }
+
+    .about-me-img {
+        margin: 0 0 50px 0;
+    }
+    .projects {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 50px 100px 50px 100px;
+    }
+    
+    .projects-img img {
+        width: 350px;
+        height: 350px;
+        object-fit: scale-down;
+    }
+    
+    .projects-text {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 400px;
+        height: 400px;
+        padding-left: 100px;
+    }
+    
+    .projects-text h2 {
+        text-align: center;
+        padding-left: 0px;
+    }
+    
+    .projects-text h3 {
+        text-align: center;
+    }
+    
+    .all-projects {
+        cursor: pointer;
+    }
+    
+    .all-projects img{
+        width: 16px;
+        height: 16px;
+    }
+    
+    #button-1,
+    #button-2,
+    #button-3,
+    #button-4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: color 0.3s;
+    }
+    
+    #button-1 img,
+    #button-2 img,
+    #button-3 img,
+    #button-4 img {
+        margin: 5px;
+    }
+    
+    #button-1:hover,
+    #button-2:hover,
+    #button-3:hover,
+    #button-4:hover {
+        color: crimson
+    }
+    
+    #button-1 {
+        margin-left: 0px;
+    }
+    #button-2 {
+        margin-left: 0px;
+    }
+    #button-3 {
+        margin-left: 0px;
+    }
+    #button-4 {
+        margin-left: 0px;
+    }
+    
+    #button-1-text,
+    #button-2-text,
+    #button-3-text,
+    #button-4-text{
+        display: none;
+        margin: 0;
+        text-align: center;
+    }
+    
+    #button-1-text p,
+    #button-2-text p,
+    #button-3-text p,
+    #button-4-text p {
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+
+    .about-me {
+        margin: 0 10%;
+    }
+
+    .about-me-img {
+        margin: 0;
+        padding: 0;
+        margin: 0 50px;
+    }
+    .about-me-img img{
+        width: 340px;
+        height: 340px;
+    }
+
+    .about-me-text {
+        text-align: center;
+        margin: 50px 0;
+        width: 600px;
+    }
+
+    .skills-img img {
+        height: 400px;
+        width: 400px;
+    }
+
+    .projects {
+        margin: 0;
+    }
+
+    .projects-img img {
+        width: 250px;
+        height: 250px;
+        object-fit: scale-down;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+
+    .about-me {
+        margin: 0 10%;
+    }
+
+    .about-me-img {
+        margin: 0;
+        padding: 0;
+        padding-top: 80px;
+        margin: 0 50px;
+        height: 280px;
+        width: 280px;
+    }
+    .about-me-img img{
+        width: 280px;
+        height: 280px;
+    }
+
+    .about-me-text {
+        text-align: center;
+        margin: 50px 0;
+        width: 600px;
+    }
+
+    .skills-img img {
+        height: 300px;
+        width: 300px;
+    }
+
+    .projects {
+        margin: 0;
+    }
+
+    .projects-img img {
+        width: 200px;
+        height: 200px;
+        object-fit: scale-down;
+        padding-top: 100px;
+    }
+    .projects-text {
+        padding: 20%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    .about-me {
+        margin: 0 10%;
+    }
+
+    .about-me-img {
+        margin: 0;
+        padding: 0;
+        padding-top: 80px;
+        margin: 0 50px;
+        height: 240px;
+        width: 240px;
+    }
+    .about-me-img img{
+        width: 240px;
+        height: 240px;
+    }
+
+    .about-me-text {
+        text-align: center;
+        margin: 50px 0;
+        width: 600px;
+    }
+
+    .skills-img img {
+        height: 300px;
+        width: 300px;
+    }
+
+    .projects {
+        margin: 0;
+    }
+
+    .projects-img img {
+        width: 150px;
+        height: 150px;
+        object-fit: scale-down;
+    }
+    .projects-text {
+        padding: 20%;
+    }
+}
+  
 
 
 
