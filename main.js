@@ -27,18 +27,105 @@ initializeNavSelector(contactNav, " |");
 
 let toggle = true;
 
-const deployProject = (project, event) => {
+const deployProject1 = (project, event, text) => {
   
   const deploy = () => {
     if (toggle) {
       event.style.transform = "rotate(90deg)";
+      text.style.display= "inline";
+      text.style.alignitems = "center";
+      button2.style.display = "none";
+      button3.style.display = "none";
+      button4.style.display = "none";
+      projectImage.src = "resources/guess-number.png";
     } else {
       event.style.transform = "rotate(0deg)";
-    } 
+      text.style.display = "";
+      button2.style.display = "";
+      button3.style.display = "";
+      button4.style.display = "";
+      projectImage.src = "/resources/projects.png";
+    }
+     
     toggle = !toggle;
   }
   project.addEventListener("click", deploy);
-  event.addEventListener("click", deploy);
+  event.addEventListener("click", deploy)
+}
+
+const deployProject2 = (project, event, text) => {
+  
+  const deploy = () => {
+    if (toggle) {
+      event.style.transform = "rotate(90deg)";
+      text.style.display= "inline";
+      button1.style.display = "none";
+      button3.style.display = "none";
+      button4.style.display = "none";
+      projectImage.src = "/resources/flexbox.png";
+    } else {
+      event.style.transform = "rotate(0deg)";
+      text.style.display = "none";
+      button1.style.display = "";
+      button3.style.display = "";
+      button4.style.display = "";
+      projectImage.src = "/resources/projects.png";
+    }
+     
+    toggle = !toggle;
+  }
+  project.addEventListener("click", deploy);
+  event.addEventListener("click", deploy)
+}
+
+const deployProject3 = (project, event, text) => {
+  
+  const deploy = () => {
+    if (toggle) {
+      event.style.transform = "rotate(90deg)";
+      text.style.display= "inline";
+      button1.style.display = "none";
+      button2.style.display = "none";
+      button4.style.display = "none";
+      projectImage.src = "resources/mysterious-organism-white.png";
+    } else {
+      event.style.transform = "rotate(0deg)";
+      text.style.display = "none";
+      button1.style.display = "";
+      button2.style.display = "";
+      button4.style.display = "";
+      projectImage.src = "resources/projects.png";
+    }
+     
+    toggle = !toggle;
+  }
+  project.addEventListener("click", deploy);
+  event.addEventListener("click", deploy)
+}
+
+const deployProject4 = (project, event, text) => {
+  
+  const deploy = () => {
+    if (toggle) {
+      event.style.transform = "rotate(90deg)";
+      text.style.display= "inline";
+      button1.style.display = "none";
+      button2.style.display = "none";
+      button3.style.display = "none";
+      projectImage.src = "/resources/mixed-message.png";
+    } else {
+      event.style.transform = "rotate(0deg)";
+      text.style.display = "none";
+      button1.style.display = "";
+      button2.style.display = "";
+      button3.style.display = "";
+      projectImage.src = "resources/projects.png";
+    }
+     
+    toggle = !toggle;
+  }
+  project.addEventListener("click", deploy);
+  event.addEventListener("click", deploy)
 }
 
 const button1 = document.querySelector("#button-1");
@@ -52,13 +139,20 @@ const button2img = document.querySelector("#button-2 img");
 const button3img = document.querySelector("#button-3 img");
 const button4img = document.querySelector("#button-4 img");
 
+const button1text = document.getElementById("button-1-text")
+const button2text = document.getElementById("button-2-text")
+const button3text = document.getElementById("button-3-text")
+const button4text = document.getElementById("button-4-text")
 
-deployProject(button1, button1img);
-deployProject(button2, button2img);
-deployProject(button3, button3img);
-deployProject(button4, button4img);
+const projectImage = document.getElementById("main-image-proj");
 
-deployProject(button1img, button1img);
-deployProject(button2img, button2img);
-deployProject(button3img, button3img);
-deployProject(button4img, button4img);
+
+deployProject1(button1, button1img, button1text);
+deployProject2(button2, button2img, button2text);
+deployProject3(button3, button3img, button3text);
+deployProject4(button4, button4img, button4text);
+
+deployProject1(button1img, button1img, button1text);
+deployProject2(button2img, button2img, button2text);
+deployProject3(button3img, button3img, button3text);
+deployProject4(button4img, button4img, button4text);
